@@ -102,21 +102,16 @@ function draw() {
  
 }
 
-function mouseDragged()
-{
+function mouseDragged(){
   Matter.Body.setPosition(stone1.body,{x:mouseX,y:mouseY});
 }
 
-function mouseReleased()
-{
+function mouseReleased(){
   thrower.fly();
 }
 
-function keyPressed()
-{
-  if(keyCode===32)
-  {
-    Matter.Body.setPosition(stone1.body,{x:140,y:315});
-    
+function keyPressed(){
+  if(keyCode===32){
+    thrower.attach (stone1.body,{x:140,y:315}); 
   }
 }
