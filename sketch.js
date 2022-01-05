@@ -112,6 +112,6 @@ function mouseReleased(){
 
 function keyPressed(){
   if(keyCode===32){
-    thrower.attach (stone1.body,{x:140,y:315}); 
+    thrower.attach(stone1.body,{x:140,y:315}); 
   }
 }
